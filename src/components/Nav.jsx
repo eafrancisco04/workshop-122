@@ -1,16 +1,22 @@
 import { Link } from "react-router-dom";
+import { AiFillShopping } from "react-icons/ai";
 
 function Nav() {
   return (
     <nav>
       <ul>
         <li>
-          {/* Link in react replaces your <a> element */}
-          <Link to="/">Home</Link>
+          <Link to="/">Products</Link>
         </li>
 
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/checkout">
+            <div className="cart">
+              <AiFillShopping />
+              <span>0</span>
+            </div>
+            
+          </Link>
         </li>
       </ul>
     </nav>

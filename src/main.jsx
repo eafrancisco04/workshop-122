@@ -8,7 +8,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <App />
-      <Hooks />
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
