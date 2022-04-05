@@ -1,15 +1,17 @@
 import { useContext } from "react";
 import CartContext from "../CartContext";
 import { AiFillShopping } from "react-icons/ai";
-import { IoShirt } from "react-icons/io5";
 
-function Card ({name, price}) {
+
+
+
+function Card ({name, price, icon}) {
     const { addToCart } = useContext(CartContext);
 
     return(
         <div className="card">
             <div className="product-box">
-                <IoShirt />
+                {icon}
             </div>
 
             <div className="purchase">
