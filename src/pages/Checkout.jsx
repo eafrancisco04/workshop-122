@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import CartContext from "../CartContext";
+import { v4 as uuid} from "uuid";
 
 function Checkout() {
 
@@ -11,7 +12,7 @@ function Checkout() {
 
         <div className="shopping-bag ">
             {items.map((item) => 
-                <div>
+                <div key={uuid()}>
                     <h2>{item.name}</h2>
                     <h3>{item.price}</h3>
                 </div>
