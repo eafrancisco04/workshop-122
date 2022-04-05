@@ -21,7 +21,7 @@ function Card ({name, price, icon}) {
                 </button>
             </div>
             
-            <h4>{price}</h4>
+            <h4>${price}</h4>
 
         </div>
 
