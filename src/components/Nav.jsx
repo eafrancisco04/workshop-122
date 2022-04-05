@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import CartContext from "../CartContext";
 import { AiFillShopping } from "react-icons/ai";
 
 function Nav() {
+
+  const { items } = useContext(CartContext);
+
   return (
     <nav>
       <ul>
@@ -13,7 +18,7 @@ function Nav() {
           <Link to="/checkout">
             <div className="cart">
               <AiFillShopping />
-              <span>0</span>
+              <span>{items.length}</span>
             </div>
             
           </Link>
