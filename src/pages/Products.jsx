@@ -8,10 +8,12 @@ import { GiBowlOfRice } from "react-icons/gi";
 import { GiBokChoy } from "react-icons/gi";
 import { GiBoba } from "react-icons/gi";
 import { SiGitea } from "react-icons/si";
+import { GiSodaCan } from "react-icons/gi";
+import { GiLemon } from "react-icons/gi";
 
 
 function Products() {
-    const products = [
+    const food = [
         {name: "Sushi", price: 15.99, icon: <GiSushis/>},
         {name: "Ramen", price: 21.99, icon: <GiNoodles/>},
         {name: "Gyoza", price: 9.99, icon: <GiDumpling/>},
@@ -21,11 +23,29 @@ function Products() {
         {name: "Milk Tea Boba", price: 9.99, icon: <GiBoba/>},
         {name: "Hot Tea", price: 2.99, icon: <SiGitea/>},
     ]
+
+    const drinks = [
+        {name: "Milk Tea Boba", price: 9.99, icon: <GiBoba/>},
+        {name: "Hot Tea", price: 1.99, icon: <SiGitea/>},
+        {name: "Soda", price: 2.49, icon: <GiSodaCan/>},
+        {name: "Pink Lemonade", price: 2.49, icon: <GiLemon/>}
+    ]
     return(
         <div className="product-list">
-            {products.map((products) => 
-            <Card name={products.name} price={products.price} icon={products.icon} key={uuid()}/>
+            <div className="food-list">
+                <h2>Food Menu</h2>
+                {food.map((food) => 
+                <Card name={food.name} price={food.price} icon={food.icon} key={uuid()}/>
             )}
+            </div>
+
+            <div className="drink-list">
+                <h2>Beverages</h2>
+                {drinks.map((drink) => 
+                <Card name={drink.name} price={drink.price} icon={drink.icon} key={uuid()}/>
+            )}
+            </div>
+            
         </div> 
     )
 }
