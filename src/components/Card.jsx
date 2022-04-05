@@ -9,19 +9,22 @@ function Card ({name, price, icon}) {
     const { addToCart } = useContext(CartContext);
 
     return(
-        <div className="card">
-            <div className="product-box">
+        <div class="card">
+            <div class="product-box">
                 {icon}
-            </div>
-
-            <div className="purchase">
-                <h3>{name}</h3>
+                <h4>{name}</h4>
+                <h5 class="price">${price}</h5>
                 <button onClick={() => addToCart(name, price)}>
-                    <AiFillShopping />
+                    Add to Cart
                 </button>
             </div>
+
+            {/* <div class="purchase">
+                <button onClick={() => addToCart(name, price)}>
+                    <p>Add to Cart</p><AiFillShopping />
+                </button>
+            </div> */}
             
-            <h4>${price}</h4>
 
         </div>
 

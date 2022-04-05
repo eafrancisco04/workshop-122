@@ -28,29 +28,36 @@ function Products() {
         {name: "Milk Tea Boba", price: 9.99, icon: <GiBoba/>},
         {name: "Hot Tea", price: 1.99, icon: <SiGitea/>},
         {name: "Soda", price: 2.49, icon: <GiSodaCan/>},
-        {name: "Pink Lemonade", price: 2.49, icon: <GiLemon/>}
+        {name: "Pink Lemonade", price: 2.49, icon: <GiLemon value={{color: 'navy', size: '50px'}}/>}
     ]
     return(
-        <div className="product-list">
+        <div class="product-list">
             <div class="cover">
                 <div class="overlay">
                 <h1>Menu</h1>
                 </div>
             </div>
             
+            <div class="products">
+            <h3>Food</h3>
+                <div class="food">
+    
+                    
+                        {food.map((food) => 
+                        <Card name={food.name} price={food.price} icon={food.icon} key={uuid()}/>
+                    )}
+                    
+                </div>
+                <br></br>
+                <h3>Beverages</h3>
+                <div class="drink">
+                        
+                        {drinks.map((drink) => 
+                        <Card name={drink.name} price={drink.price} icon={drink.icon} key={uuid()}/>
+                        )}
+                    
+                </div>
 
-            <div className="food-list">
-                <h2>Food Menu</h2>
-                {food.map((food) => 
-                <Card name={food.name} price={food.price} icon={food.icon} key={uuid()}/>
-            )}
-            </div>
-
-            <div className="drink-list">
-                <h2>Beverages</h2>
-                {drinks.map((drink) => 
-                <Card name={drink.name} price={drink.price} icon={drink.icon} key={uuid()}/>
-            )}
             </div>
             
         </div> 

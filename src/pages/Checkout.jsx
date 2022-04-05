@@ -15,7 +15,7 @@ function Checkout() {
                 </div>
             </div>
 
-            <div className="shopping-bag ">
+            <div class="checkout">
                 {items.map((item) => 
                     <div key={uuid()}>
                         <h2>{item.name}</h2>
