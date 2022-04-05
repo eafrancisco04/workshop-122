@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import { v4 as uuid } from "uuid";
 
 function Products() {
     const products = [
@@ -11,9 +12,9 @@ function Products() {
     return(
         <div className="product-list">
             {products.map((products) => 
-            <Card name={products.name} price={products.price}/>
+            <Card name={products.name} price={products.price} key={uuid()}/>
             )}
-        </div>
+        </div> 
     )
 }
 
