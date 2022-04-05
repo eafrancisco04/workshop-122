@@ -15,7 +15,7 @@ function Nav() {
         </li>
 
         <li>
-          <Link to="/checkout">
+          <Link to="/checkout"> 
             <div className="cart">
               <AiFillShopping />
               <span>{items.length}</span>
