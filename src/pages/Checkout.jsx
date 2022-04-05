@@ -10,7 +10,9 @@ function Checkout() {
         <>
         <div>
             <div class="cover">
-            <h1>Checkout</h1>
+                <div class="overlay">
+                <h1>Checkout</h1>
+                </div>
             </div>
 
             <div className="shopping-bag ">

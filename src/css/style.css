@@ -7,6 +7,7 @@
 body {
   font-family: 'Ubuntu', 'Arial';
 }
+
 h1 {
   font-family: 'DM Serif Display', 'Times New Roman';
   font-size: 5em;
@@ -14,10 +15,17 @@ h1 {
   letter-spacing: 2px;
 }
 
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+
 nav {
-  position:absolute;
+  position: absolute;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+
+  z-index: 1;
 }
 
 ul {
@@ -25,7 +33,6 @@ ul {
   padding: 1em;
   justify-content: center;
   list-style-type: none;
-  position: relative;
   
 }
 
@@ -34,13 +41,20 @@ li {
 }
 
 .cover {
-  height: 70vh;
+  height: 60vh;
   margin: auto;
-  padding: 200px;
   background-image: url("../img/food-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
+}
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  padding: 200px;
   text-align: center;
+  background: rgba( 14, 13, 13, 0.2 );
+  backdrop-filter: blur( 2px );
+
 }

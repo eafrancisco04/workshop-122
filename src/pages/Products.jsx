@@ -33,8 +33,11 @@ function Products() {
     return(
         <div className="product-list">
             <div class="cover">
+                <div class="overlay">
                 <h1>Menu</h1>
+                </div>
             </div>
+            
 
             <div className="food-list">
                 <h2>Food Menu</h2>
