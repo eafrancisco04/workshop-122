@@ -32,6 +32,10 @@ function Products() {
     ]
     return(
         <div className="product-list">
+            <div class="cover">
+                <h1>Menu</h1>
+            </div>
+
             <div className="food-list">
                 <h2>Food Menu</h2>
                 {food.map((food) => 

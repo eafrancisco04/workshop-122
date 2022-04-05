@@ -8,20 +8,41 @@ function Checkout() {
 
     return(
         <>
-        <h1>Checkout</h1>
+        <div>
+            <div class="cover">
+            <h1>Checkout</h1>
+            </div>
 
-        <div className="shopping-bag ">
-            {items.map((item) => 
-                <div key={uuid()}>
-                    <h2>{item.name}</h2>
-                    <h3>{item.price}</h3>
-                </div>
-            )}
+            <div className="shopping-bag ">
+                {items.map((item) => 
+                    <div key={uuid()}>
+                        <h2>{item.name}</h2>
+                        <h3>{item.price}</h3>
+                    </div>
+                )}
+            </div>
 
         </div>
+
+        
         </>
     )
 
 }
 
 export default Checkout;
+
+{/* <div>
+            <div class="cover">
+                <h1>Checkout</h1>
+            </div>
+
+            <div className="shopping-bag ">
+                {items.map((item) => 
+                    <div key={uuid()}>
+                        <h2>{item.name}</h2>
+                        <h3>{item.price}</h3>
+                    </div>
+                )}
+
+        </div> */}
