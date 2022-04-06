@@ -11,8 +11,7 @@ function Card ({name, price, icon}) {
     return(
         <div className="card">
             <div className="product-box">
-                {icon}
-                <h4>{name}</h4>
+                <h4>{icon} {name}</h4>
                 <h5 className="price">${price}</h5>
                 <button onClick={() => addToCart(name, price)}>
                     Add to Cart<AiFillShopping />
