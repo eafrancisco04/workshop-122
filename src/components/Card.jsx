@@ -9,13 +9,13 @@ function Card ({name, price, icon}) {
     const { addToCart } = useContext(CartContext);
 
     return(
-        <div class="card">
-            <div class="product-box">
+        <div className="card">
+            <div className="product-box">
                 {icon}
                 <h4>{name}</h4>
-                <h5 class="price">${price}</h5>
+                <h5 className="price">${price}</h5>
                 <button onClick={() => addToCart(name, price)}>
-                    Add to Cart
+                    Add to Cart<AiFillShopping />
                 </button>
             </div>
 

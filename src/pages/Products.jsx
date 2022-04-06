@@ -31,16 +31,16 @@ function Products() {
         {name: "Pink Lemonade", price: 2.49, icon: <GiLemon value={{color: 'navy', size: '50px'}}/>}
     ]
     return(
-        <div class="product-list">
-            <div class="cover">
-                <div class="overlay">
+        <div className="product-list">
+            <div className="cover">
+                <div className="overlay">
                 <h1>Menu</h1>
                 </div>
             </div>
             
-            <div class="products">
+            <div className="products">
             <h3>Food</h3>
-                <div class="food">
+                <div className="food">
     
                     
                         {food.map((food) => 
@@ -50,7 +50,7 @@ function Products() {
                 </div>
                 <br></br>
                 <h3>Beverages</h3>
-                <div class="drink">
+                <div className="drink">
                         
                         {drinks.map((drink) => 
                         <Card name={drink.name} price={drink.price} icon={drink.icon} key={uuid()}/>

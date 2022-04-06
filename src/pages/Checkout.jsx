@@ -9,13 +9,13 @@ function Checkout() {
     return(
         <>
         <div>
-            <div class="cover">
-                <div class="overlay">
+            <div className="cover">
+                <div className="overlay">
                 <h1>Checkout</h1>
                 </div>
             </div>
 
-            <div class="checkout">
+            <div className="checkout">
                 {items.map((item) => 
                     <div key={uuid()}>
                         <h2>{item.name}</h2>
