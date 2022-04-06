@@ -17,7 +17,7 @@ function Checkout() {
 
             <div className="checkout">
                 {items.map((item) => 
-                    <div key={uuid()}>
+                    <div key={uuid()} className="checkout-item">
                         <h2>{item.name}</h2>
                         <h3>{item.price}</h3>
                     </div>
