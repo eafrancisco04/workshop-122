@@ -20,8 +20,6 @@ function Products() {
         {name: "Pork BBQ Bao", price: 4.99, icon: <GiDumplingBao/>},
         {name: "Bibimbap", price: 15.99, icon: <GiBowlOfRice/>},
         {name: "Thai Salad", price: 10.99, icon: <GiBokChoy/>},
-        {name: "Milk Tea Boba", price: 9.99, icon: <GiBoba/>},
-        {name: "Hot Tea", price: 2.99, icon: <SiGitea/>},
     ]
 
     const drinks = [
